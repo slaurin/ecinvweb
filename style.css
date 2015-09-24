@@ -1,0 +1,45 @@
+body {
+  padding-top: 60px;
+}
+@media (max-width: 979px) {
+  body {
+    padding-top: 0px;
+  }
+}
+
+.components {
+	.row
+}
+
+.components > .component {
+	.span16;
+	width: 100px;
+	height: 100px;
+	background-color: red;
+}
+
+input[type="number"] {
+   width:50px;
+}
+/*
+.list-group-item {
+	color: white;
+	background-color: black;
+
+}
+
+.mybutton a:hover :focus {
+	background-color: red;
+}
+
+.list-group-item button:hover {
+	color: white;
+	background-color: black;
+
+}
+
+
+.list-group-hover-bg {
+background-color: black;	
+}
+*/

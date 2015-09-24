@@ -1,0 +1,410 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>Electronic Component Inventory</title>
+
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="style.css">
+
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	      <![endif]-->
+	  </head>
+	  <body>
+
+	  	<div class="container-fluid"id="dialog-form" title="Add Component">
+	  		<form>
+	  			<div class="bs-example" >
+	  				<ul class="nav nav-tabs" id="myTab">
+	  					<li class="active"><a href="#sectionA">General Information</a></li>
+	  					<li><a href="#sectionB">Technical Information</a></li>
+	  					<li><a href="#sectionC">Distributor</a></li>
+	  					<li><a href="#sectionD">Manufacturer</a></li>
+	  					<li><a href="#sectionE">Attachments</a></li>
+	  				</ul>
+	  				<div class="tab-content form-horizontal">
+	  					<div id="sectionA" class="tab-pane fade in active">
+	  						<div class="row-fluid">
+	  							<div class="clearfix">
+	  								<hr>
+	  								<div class="form-group">
+	  									<label for="component-name" class="control-label col-md-2">Name</label>
+	  									<div class="col-md-10">
+	  										<input type="text" class="form-control" id="componentName" placeholder="Component name">
+	  									</div>
+	  								</div>
+	  								<div class="form-group">
+	  									<label for="category" class="control-label col-md-2">Category</label>
+	  									<div class="col-md-10">
+	  										<select class="form-control">
+	  											<optgroup label="Cable">
+	  												<option>Coax</option>
+	  												<option>Ethernet</option>
+	  												<option>HDMI</option>
+	  												<option>USB</option>
+	  											</optgroup>
+	  											<optgroup label="IC">
+	  												<option>Level Shifter</option>
+	  												<option>Microcontroller</option>
+	  											</optgroup>
+	  											<optgroup label="Module">
+	  												<option>Arduino Shield</option>
+	  												<option>Beaglebone Cape</option>
+	  												<option>Misc</option>
+	  											</optgroup>
+	  											<optgroup label="Sensor">
+	  												<option>Accelerometers</option>
+	  												<option>Gyroscopes</option>
+	  												<option>Infrared & Ligth</option>
+	  												<option>Inertia Measuments Units</option>
+	  												<option>Sound</option>
+	  												<option>Ultrasonic Range Finders</option>
+	  											</optgroup>
+
+	  										</select>
+	  									</div>
+	  								</div>
+	  								<div class="form-group">
+	  									<label for="quantity" class="control-label col-md-2">Quantity</label>
+	  									<div class="col-md-4">
+	  										<input type="number" min="0" max="9999" value="1" required>
+	  									</div>
+	  								</div>
+	  								<div class="form-group">
+	  									<label for="storage-location" class="control-label col-md-2">Storage Location</label>
+	  									<div class="col-md-10">
+	  										<input type="text" class="form-control" id="storage-location" placeholder="Location">
+	  									</div>
+	  								</div>
+	  								<div class="form-group">
+	  									<label for="description" class="control-label col-md-2">Description</label>
+	  									<div class="col-md-10">
+	  										<input type="text" class="form-control" id="description" placeholder="Component description">
+	  									</div>
+	  								</div>
+	  								<div class="form-group">
+	  									<label for="comment" class="control-label col-md-2">Comment</label>
+	  									<div class="col-md-10">
+	  										<textarea type="text" class="form-control" id="comment" placeholder="Component comment" rows="4"></textarea>
+	  									</div>
+	  								</div>
+	  							</div>
+	  						</div>
+	  					</div>
+	  					<div id="sectionB" class="tab-pane fade form-horizontal">
+	  						<div class="row-fluid">
+	  							<div class="clearfix">
+	  								<hr>
+	  								<div class="form-group">
+	  									<label for="width" class="control-label col-md-2">Width</label>
+	  									<div class="col-md-5">
+	  										<input type="text" class="form-control" id="width" placeholder="Width in mm">
+	  									</div>
+	  								</div>
+	  							</div>
+	  							<div class="form-group">
+	  								<label for="height" class="control-label col-md-2">Height</label>
+	  								<div class="col-md-5">
+	  									<input type="text" class="form-control" id="height" placeholder="Height in mm">
+	  								</div>
+	  							</div>
+	  						</div>
+	  						<div class="form-group">
+	  							<label for="depth" class="control-label col-md-2">Depth</label>
+	  							<div class="col-md-5">
+	  								<input type="text" class="form-control" id="depth" placeholder="Depth in mm">
+	  							</div>
+	  						</div>
+	  						<div class="form-group">
+	  							<label for="weight" class="control-label col-md-2">Weight</label>
+	  							<div class="col-md-5">
+	  								<input type="text" class="form-control" id="weight" placeholder="Weight in grams">
+	  							</div>
+	  						</div>
+	  						<div class="form-group">
+	  							<label for="pin" class="control-label col-md-2">Nb of Pins</label>
+	  							<div class="col-md-4">
+	  								<input type="number" id="pin" min="0" max="99" required>
+	  							</div>
+	  						</div>
+	  					</div>
+	  				<div id="sectionC" class="tab-pane fade form-horizontal">
+	  					<div class="row-fluid">
+	  						<div class="clearfix">
+	  							<hr>
+
+	  							<div class="form-group">
+	  								<label for="distributor" class="control-label col-md-3">Distributor</label>
+	  								<div class="col-md-4">
+	  									<select class="form-control" id="distributor">
+	  										<option>Arrow</option>
+	  										<option>Avnet</option>
+	  									</select>
+	  								</div>
+	  								<div class="col-md-2">
+	  									<button type="button" class="btn btn-default">New</button>
+	  								</div>
+	  							</div>
+	  						</div>
+	  						<div class="row-fluid">
+	  							<div class="form-group">
+	  								<label for="order-number" class="control-label col-md-3">Order Number</label>
+	  								<div class="col-md-4">
+	  									<input type="text" class="form-control" id="order-number" placeholder="">
+	  								</div>
+	  								<label for="sku" class="control-label col-md-1 ">SKU</label>
+	  								<div class="col-md-4">
+	  									<input type="text" class="form-control" id="sku" placeholder="">
+	  								</div>
+
+	  							</div>
+	  						</div>
+	  						<div class="row-fluid">
+	  							<div class="form-group">
+	  								<label for="packaging-unit" class="control-label col-md-3">Packaging Unit</label>
+	  								<div class="col-md-4">
+	  									<input type="text" class="form-control" id="packaging-unit" placeholder="">
+	  								</div>
+	  								<label for="price-per-item" class="control-label col-md-1">Price</label>
+	  								<div class="col-md-4">
+	  									<input type="text" class="form-control" id="price-per-item" placeholder="Price per unit">
+	  								</div>
+
+	  							</div>
+	  						</div>
+	  						<div class="row-fluid">
+	  							<div class="form-group">
+	  								<label for="package-price" class="control-label col-md-3">Package Price</label>
+	  								<div class="col-md-4">
+	  									<input type="text" class="form-control" id="package-price" placeholder="">
+	  								</div>
+	  								<div class="input-group">
+	  									<div class="col-md-4">
+	  										<button type="button" class="btn btn-default">Add</button>
+	  									</div>
+	  									<div class="col-md-1">
+	  										<button type="button" class="btn btn-default pull-left">Delete</button>
+	  									</div>
+	  								</div>
+	  							</div>
+	  						</div>
+	  						<div class="row-fluid">
+	  							<div>
+	  								<table class="table table-striped">
+	  									<thead>
+	  										<tr>
+	  											<th>Distributor</th>
+	  											<th>Order No</th>
+	  											<th>Packaging Unit</th>
+	  											<th>Package Price</th>
+	  											<th>Price/Unit</th>
+	  											<th>SKU</th>
+	  										</tr>
+	  									</thead>
+	  									<tbody>
+	  									</tbody>
+	  								</table>
+	  							</div>
+
+	  						</div>
+	  					</div>
+
+	  						<!--
+	  						<div class="form-group">
+	  							
+	  						</div>
+	  						
+	  						<div class="form-group">
+	  							<label for="price-per-item" class="control-label col-md-3">Price Per Item</label>
+	  							<div class="col-md-5">
+	  								<input type="text" class="form-control" id="price-per-item" placeholder="">
+	  							</div>
+	  						</div> -->
+	  					</div>
+	  					<div id="sectionD" class="tab-pane fade form-horizontal" >
+	  						<div class="row-fluid">
+	  							<div class="clearfix">
+	  								<hr>
+
+	  								<div class="form-group">
+	  									<label for="manufacturer" class="control-label col-md-3">Manufacturer</label>
+	  									<div class="col-md-5">
+	  										<select class="form-control" id="manufacturer">
+	  											<option>Future</option>
+	  											<option>GM</option>
+	  										</select>
+	  									</div>
+	  									<div class="col-md-2">
+	  										<button type="button" class="btn btn-default">New</button>
+	  									</div>
+	  								</div>
+	  							</div>
+	  						</div>
+	  						<div class="row-fluid">
+	  							<div class="form-group">
+	  								<label for="part-number" class="control-label col-md-3">Part Number</label>
+	  								<div class="col-md-4">
+	  									<input type="text" class="form-control" id="part-number" placeholder="">
+	  								</div>
+	  								<div class="input-group">
+	  									<div class="col-md-4">
+	  										<button type="button" class="btn btn-default">Add</button>
+	  									</div>
+	  									<div class="col-md-1">
+	  										<button type="button" class="btn btn-default pull-left">Delete</button>
+	  									</div>
+	  								</div>
+	  							</div>
+	  						</div>
+	  						<div class="row-fluid">
+	  							<div>
+	  								<table class="table table-striped">
+	  									<thead>
+	  										<tr>
+	  											<th>Manufacturer</th>
+	  											<th>Part Number</th>
+	  										</tr>
+	  									</thead>
+	  									<tbody>
+	  									</tbody>
+	  								</table>
+	  							</div>
+	  						</div>
+	  					</div>
+	  					<div id="sectionE" class="tab-pane fade form-horizontal">
+	  						<div class="row-fluid">
+	  							<div class="clearfix">
+	  								<hr>
+
+	  								<div class="row-fluid">
+	  									<div class="input-group">
+	  										<div class="col-md-4">
+	  											<button type="button" class="btn btn-default">Add</button>
+	  										</div>
+	  										<div class="col-md-1">
+	  											<button type="button" class="btn btn-default pull-left">Delete</button>
+	  										</div>
+	  									</div>
+	  								</div>
+	  								<div class="row-fluid">
+	  									<div>
+	  										<table class="table table-striped">
+	  											<thead>
+	  												<tr>
+	  													<th></th>
+	  													<th>Filename</th>
+	  													<th>Size</th>
+	  													<th>Description</th>
+	  												</tr>
+	  											</thead>
+	  											<tbody>
+	  											</tbody>
+	  										</table>
+	  									</div>
+	  								</div>
+	  							</div>
+	  						</div>
+	  					</div>
+	  				</div>
+	  			</div>
+
+	  		</form>
+	  	</div>
+
+	  	<!-- Fixed navbar -->
+	  	<nav class="navbar navbar-inverse navbar-fixed-top">
+	  		<div class="container">
+	  			<div class="navbar-header">
+	  				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	  					<span class="sr-only">Toggle navigation</span>
+	  					<span class="icon-bar"></span>
+	  					<span class="icon-bar"></span>
+	  					<span class="icon-bar"></span>
+	  				</button>
+	  				<a class="navbar-brand" href="#">GF</a>
+	  			</div>
+	  			<div id="navbar" class="navbar-collapse collapse">
+	  				<ul class="nav navbar-nav">
+	  					<li class="active"><a href="#">Components</a></li>
+	  					<li><a href="#about">Projects</a></li>
+	  					<li><a href="#contact">Account</a></li>
+	  					<li class="dropdown">
+	  						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+	  						<ul class="dropdown-menu">
+	  							<li><a href="#">Action</a></li>
+	  							<li><a href="#">Another action</a></li>
+	  							<li><a href="#">Something else here</a></li>
+	  							<li role="separator" class="divider"></li>
+	  							<li class="dropdown-header">Nav header</li>
+	  							<li><a href="#">Separated link</a></li>
+	  							<li><a href="#">One more separated link</a></li>
+	  						</ul>
+	  					</li>
+	  				</ul>
+	  			</div><!--/.nav-collapse -->
+	  		</div>
+	  	</nav>
+	  	<div class="container-fluid">
+	  		<div class="row">
+	  			<div class="list-group">
+	  				<div class="col-sm-3 col-md-2 sidebar">
+	  					<a href="#about"><button type="button" class="list-group-item mybutton">All<span class="badge">0</span></button></a>
+	  					<button type="button" class="list-group-item mybutton">Cable<span class="badge">0</span></button>
+	  					<button type="button" class="list-group-item">Capacitor<span class="badge">0</span></button>
+	  					<button type="button" class="list-group-item">Connector<span class="badge">0</span></button>
+	  					<button type="button" class="list-group-item">Diode<span class="badge">0</span></button>
+	  					<button type="button" class="list-group-item">Display<span class="badge">0</span></button>
+	  					<button type="button" class="list-group-item">IC<span class="badge">0</span></button>
+	  					<button type="button" class="list-group-item">Inductor<span class="badge">0</span></button>
+	  					<button type="button" class="list-group-item">Mechanic<span class="badge">0</span></button>
+	  					<button type="button" class="list-group-item">Misc<span class="badge">0</span></button>
+	  					<button type="button" class="list-group-item">Module<span class="badge">0</span></button>
+	  					<button type="button" class="list-group-item">Opto<span class="badge">0</span></button>
+	  					<button type="button" class="list-group-item">Oscillator<span class="badge">0</span></button>
+	  					<button type="button" class="list-group-item">Resistor<span class="badge">0</span></button>
+	  					<button type="button" class="list-group-item">Sensor<span class="badge">0</span></button>
+	  					<button type="button" class="list-group-item">Switch<span class="badge">0</span></button>
+	  					<button type="button" class="list-group-item">Transformer<span class="badge">0</span></button>
+	  					<button type="button" class="list-group-item">Transistor<span class="badge">0</span></button>
+	  				</div>
+	  			</div>
+	  			<div>
+	  				<button type="button" class="btn default-btn" id="add-component">Add Component</button>
+	  				<button type="button" class="btn default-btn" id="del-component">Delete Component</button>
+	  				<div class="table-responsive">
+	  					<table class="table">
+	  						<thead>
+	  							<tr>
+	  								<th>Name</th>
+	  								<th>Category</th>
+	  								<th>Location</th>
+	  								<th>Datasheet</th>
+	  								<th>Quantity</th>
+	  								<th>Description</th>
+	  							</tr>
+	  						</thead>
+	  					</table>
+	  				</div>
+	  			</div>
+	  		</div>
+
+
+	  		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	  		<script language="JavaScript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	  		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	  		<script language="JavaScript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	  		<script language="JavaScript" type="text/javascript" src="script.js"></script>
+	  		<!-- Include all compiled plugins (below), or include individual files as needed -->
+	  	</body>
+	  	</html>
