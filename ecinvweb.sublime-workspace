@@ -1,0 +1,895 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"com",
+				"componentName"
+			],
+			[
+				"pri",
+				"price_per_unit"
+			],
+			[
+				"op",
+				"option"
+			],
+			[
+				"des",
+				"description"
+			],
+			[
+				"categor",
+				"category"
+			],
+			[
+				"cate",
+				"category〔class〕"
+			],
+			[
+				"m",
+				"multimap"
+			],
+			[
+				"distri",
+				"distributor"
+			],
+			[
+				"q",
+				"quantity"
+			],
+			[
+				"de",
+				"depth"
+			],
+			[
+				"pac",
+				"package_price"
+			],
+			[
+				"di",
+				"distributor_id"
+			],
+			[
+				"pr",
+				"price_per_unit"
+			],
+			[
+				"pack",
+				"package_unit"
+			],
+			[
+				"dis",
+				"distributor-web-site"
+			],
+			[
+				"distr",
+				"distributor-name"
+			],
+			[
+				"s",
+				"submit"
+			],
+			[
+				"li",
+				"link\tTag"
+			],
+			[
+				"email",
+				"email_pieces"
+			],
+			[
+				"update",
+				"updatePuppy"
+			],
+			[
+				"get",
+				"getAllPuppies"
+			],
+			[
+				"venu",
+				"venue_id"
+			],
+			[
+				"ven",
+				"venue_id"
+			],
+			[
+				"re",
+				"result"
+			],
+			[
+				"g",
+				"getGeocodeLocation"
+			],
+			[
+				"volume",
+				"adjustVolume"
+			],
+			[
+				"c",
+				"corrige"
+			],
+			[
+				"a",
+				"a-faire"
+			],
+			[
+				"respon",
+				"responses"
+			],
+			[
+				"pro",
+				"process"
+			],
+			[
+				"paddin",
+				"padding-right"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"wi",
+				"min-width"
+			],
+			[
+				"button",
+				"button"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"i",
+				"i"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"border",
+				"border-style"
+			],
+			[
+				"bor",
+				"border-width"
+			],
+			[
+				"bo",
+				"border-color"
+			],
+			[
+				"backgrou",
+				"background-color"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"text",
+				"textarea\tTag"
+			],
+			[
+				"b",
+				"background-color"
+			],
+			[
+				"ba",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "ecinvweb.sublime-project",
+			"settings":
+			{
+				"buffer_size": 45,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "script.js",
+			"settings":
+			{
+				"buffer_size": 12495,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 613,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "server.js",
+			"settings":
+			{
+				"buffer_size": 5630,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "multimap.js",
+			"settings":
+			{
+				"buffer_size": 500,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "\t<!DOCTYPE html>\n\t<html lang=\"en\">\n\t<head>\n\t\t<meta charset=\"utf-8\">\n\t\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t\t<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->\n\t\t<title>Electronic Component Inventory</title>\n\n\t\t<!-- Bootstrap -->\n\t\t<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css\">\n\t\t<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css\">\n\t\t<link rel=\"stylesheet\" href=\"style.css\">\n\n\n\t\t<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->\n\t\t<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->\n\t    <!--[if lt IE 9]>\n\t      <script src=\"https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n\t      <script src=\"https://oss.maxcdn.com/respond/1.4.2/respond.min.js\"></script>\n\t      <![endif]-->\n\t  </head>\n\t  <body>\n\n\t\t<!-- NEW DISTRIBUTOR DIALOG -->\n\t  \t<div class=\"container-fluid\" id=\"distributor-dialog-form\" title=\"Add Distributor\">\n\t  \t\t<form>\n\t  \t\t\t<div class=\"form-horizontal\">\n\t\t  \t\t\t<div id=\"sectionD-1\" class=\"form-horizontal\" >\n\t\t\t\t\t\t<div class=\"row-fluid\">\n\t\t\t\t\t\t\t<div class=\"clearfix\">\n\t\t\t\t\t\t\t\t<hr>\n\n\t\t\t\t\t\t\t\t<div class=\"form-group\">\n\t\t\t\t\t\t\t\t\t<label for=\"distributor-name\" class=\"control-label col-md-3\">Name</label>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-7\">\n\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" id=\"distributor-name\" placeholder=\"\">\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"row-fluid\">\n\t\t\t\t\t\t\t<div class=\"form-group\">\n\t\t\t\t\t\t\t\t<label for=\"part-number\" class=\"control-label col-md-3\">Web Site</label>\n\t\t\t\t\t\t\t\t<div class=\"col-md-7\">\n\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" id=\"distributor-web-site\" placeholder=\"\">\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t  \t</form>\n\t\t</div>\n\n\t\t<!-- NEW MANUFACTURER DIALOG -->\n\t\t<!-- Could I use a template since new distributor and new manufacturer dialog are the same -->\n\t  \t<div class=\"container-fluid\" id=\"manufacturer-dialog-form\" title=\"Add Manufacturer\">\n\t  \t\t<form>\n\t  \t\t\t<div class=\"form-horizontal\">\n\t\t  \t\t\t<div id=\"sectionD-1\" class=\"form-horizontal\" >\n\t\t\t\t\t\t<div class=\"row-fluid\">\n\t\t\t\t\t\t\t<div class=\"clearfix\">\n\t\t\t\t\t\t\t\t<hr>\n\n\t\t\t\t\t\t\t\t<div class=\"form-group\">\n\t\t\t\t\t\t\t\t\t<label for=\"manufacturer-name\" class=\"control-label col-md-3\">Name</label>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-7\">\n\t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" id=\"manufacturer-name\" placeholder=\"\">\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"row-fluid\">\n\t\t\t\t\t\t\t<div class=\"form-group\">\n\t\t\t\t\t\t\t\t<label for=\"part-number\" class=\"control-label col-md-3\">Web Site</label>\n\t\t\t\t\t\t\t\t<div class=\"col-md-7\">\n\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" id=\"manufacturer-web-site\" placeholder=\"\">\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t  \t</form>\n\t\t</div>\n\n\t\t<!-- ADD COMPONENT DIALOG -->\n\t  \t<div class=\"container-fluid\" id=\"dialog-form\" title=\"Add Component\">\n\t  \t\t<form>\n\t  \t\t\t<div class=\"bs-example\" >\n\t  \t\t\t\t<ul class=\"nav nav-tabs\" id=\"myTab\">\n\t  \t\t\t\t\t<li class=\"active\"><a href=\"#sectionA\">General Information</a></li>\n\t  \t\t\t\t\t<li><a href=\"#sectionB\">Technical Information</a></li>\n\t  \t\t\t\t\t<li><a href=\"#sectionC\">Distributor</a></li>\n\t  \t\t\t\t\t<li><a href=\"#sectionD\">Manufacturer</a></li>\n\t  \t\t\t\t\t<li><a href=\"#sectionE\">Attachments</a></li>\n\t  \t\t\t\t</ul>\n\t  \t\t\t\t<div class=\"tab-content form-horizontal\">\n\t  \t\t\t\t\t<div id=\"sectionA\" class=\"tab-pane fade in active\">\n\t  \t\t\t\t\t\t<div class=\"row-fluid\">\n\t  \t\t\t\t\t\t\t<div class=\"clearfix\">\n\t  \t\t\t\t\t\t\t\t<hr>\n\t  \t\t\t\t\t\t\t\t<div class=\"form-group\">\n\t  \t\t\t\t\t\t\t\t\t<label for=\"component-name\" class=\"control-label col-md-2\">Name</label>\n\t  \t\t\t\t\t\t\t\t\t<div class=\"col-md-10\">\n\t  \t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" id=\"componentName\" placeholder=\"Component name\">\n\t  \t\t\t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t\t\t<div class=\"form-group\">\n\t  \t\t\t\t\t\t\t\t\t<label for=\"category\" class=\"control-label col-md-2\">Category</label>\n\t  \t\t\t\t\t\t\t\t\t<div class=\"col-md-10\">\n\t  \t\t\t\t\t\t\t\t\t\t<select id=\"category\" class=\"form-control\">\n\t  \t\t\t\t\t\t\t\t\t\t<!--\n\t  \t\t\t\t\t\t\t\t\t\t\t<optgroup label=\"Cable\">\n\t  \t\t\t\t\t\t\t\t\t\t\t\t<option>Coax</option>\n\t  \t\t\t\t\t\t\t\t\t\t\t\t<option>Ethernet</option>\n\t  \t\t\t\t\t\t\t\t\t\t\t\t<option>HDMI</option>\n\t  \t\t\t\t\t\t\t\t\t\t\t\t<option>USB</option>\n\t  \t\t\t\t\t\t\t\t\t\t\t</optgroup>\n\t  \t\t\t\t\t\t\t\t\t\t\t<optgroup label=\"IC\">\n\t  \t\t\t\t\t\t\t\t\t\t\t\t<option>Level Shifter</option>\n\t  \t\t\t\t\t\t\t\t\t\t\t\t<option>Microcontroller</option>\n\t  \t\t\t\t\t\t\t\t\t\t\t</optgroup>\n\t  \t\t\t\t\t\t\t\t\t\t\t<optgroup label=\"Module\">\n\t  \t\t\t\t\t\t\t\t\t\t\t\t<option>Arduino Shield</option>\n\t  \t\t\t\t\t\t\t\t\t\t\t\t<option>Beaglebone Cape</option>\n\t  \t\t\t\t\t\t\t\t\t\t\t\t<option>Misc</option>\n\t  \t\t\t\t\t\t\t\t\t\t\t</optgroup>\n\t  \t\t\t\t\t\t\t\t\t\t\t<optgroup label=\"Sensor\">\n\t  \t\t\t\t\t\t\t\t\t\t\t\t<option>Accelerometers</option>\n\t  \t\t\t\t\t\t\t\t\t\t\t\t<option>Gyroscopes</option>\n\t  \t\t\t\t\t\t\t\t\t\t\t\t<option>Infrared & Ligth</option>\n\t  \t\t\t\t\t\t\t\t\t\t\t\t<option>Inertia Measuments Units</option>\n\t  \t\t\t\t\t\t\t\t\t\t\t\t<option>Sound</option>\n\t  \t\t\t\t\t\t\t\t\t\t\t\t<option>Ultrasonic Range Finders</option>\n\t  \t\t\t\t\t\t\t\t\t\t\t</optgroup>\n\t\t\t\t\t\t\t\t\t\t\t-->\n\t  \t\t\t\t\t\t\t\t\t\t</select>\n\t  \t\t\t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t\t\t<div class=\"form-group\">\n\t  \t\t\t\t\t\t\t\t\t<label for=\"quantity\" class=\"control-label col-md-2\">Quantity</label>\n\t  \t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t  \t\t\t\t\t\t\t\t\t\t<input id=\"quantity\" type=\"number\" min=\"0\" max=\"9999\" value=\"1\" required>\n\t  \t\t\t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t\t\t<div class=\"form-group\">\n\t  \t\t\t\t\t\t\t\t\t<label for=\"storage-location\" class=\"control-label col-md-2\">Storage Location</label>\n\t  \t\t\t\t\t\t\t\t\t<div class=\"col-md-10\">\n\t  \t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" id=\"storage-location\" placeholder=\"Location\">\n\t  \t\t\t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t\t\t<div class=\"form-group\">\n\t  \t\t\t\t\t\t\t\t\t<label for=\"description\" class=\"control-label col-md-2\">Description</label>\n\t  \t\t\t\t\t\t\t\t\t<div class=\"col-md-10\">\n\t  \t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" id=\"description\" placeholder=\"Component description\">\n\t  \t\t\t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t\t\t<div class=\"form-group\">\n\t  \t\t\t\t\t\t\t\t\t<label for=\"comment\" class=\"control-label col-md-2\">Comment</label>\n\t  \t\t\t\t\t\t\t\t\t<div class=\"col-md-10\">\n\t  \t\t\t\t\t\t\t\t\t\t<textarea type=\"text\" class=\"form-control\" id=\"comment\" placeholder=\"Component comment\" rows=\"4\"></textarea>\n\t  \t\t\t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t</div>\n\t  \t\t\t\t\t</div>\n\t  \t\t\t\t\t<div id=\"sectionB\" class=\"tab-pane fade form-horizontal\">\n\t  \t\t\t\t\t\t<div class=\"row-fluid\">\n\t  \t\t\t\t\t\t\t<div class=\"clearfix\">\n\t  \t\t\t\t\t\t\t\t<hr>\n\t  \t\t\t\t\t\t\t\t<div class=\"form-group\">\n\t  \t\t\t\t\t\t\t\t\t<label for=\"width\" class=\"control-label col-md-2\">Width</label>\n\t  \t\t\t\t\t\t\t\t\t<div class=\"col-md-5\">\n\t  \t\t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" id=\"width\" placeholder=\"Width in mm\">\n\t  \t\t\t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t\t<div class=\"form-group\">\n\t  \t\t\t\t\t\t\t\t<label for=\"height\" class=\"control-label col-md-2\">Height</label>\n\t  \t\t\t\t\t\t\t\t<div class=\"col-md-5\">\n\t  \t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" id=\"height\" placeholder=\"Height in mm\">\n\t  \t\t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t<div class=\"form-group\">\n\t  \t\t\t\t\t\t\t<label for=\"depth\" class=\"control-label col-md-2\">Depth</label>\n\t  \t\t\t\t\t\t\t<div class=\"col-md-5\">\n\t  \t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" id=\"depth\" placeholder=\"Depth in mm\">\n\t  \t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t<div class=\"form-group\">\n\t  \t\t\t\t\t\t\t<label for=\"weight\" class=\"control-label col-md-2\">Weight</label>\n\t  \t\t\t\t\t\t\t<div class=\"col-md-5\">\n\t  \t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" id=\"weight\" placeholder=\"Weight in grams\">\n\t  \t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t<div class=\"form-group\">\n\t  \t\t\t\t\t\t\t<label for=\"pin\" class=\"control-label col-md-2\">Nb of Pins</label>\n\t  \t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t  \t\t\t\t\t\t\t\t<input type=\"number\" id=\"pin\" min=\"0\" max=\"99\" required>\n\t  \t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t</div>\n\t  \t\t\t\t\t</div>\n\t  \t\t\t\t<div id=\"sectionC\" class=\"tab-pane fade form-horizontal\">\n\t  \t\t\t\t\t<div class=\"row-fluid\">\n\t  \t\t\t\t\t\t<div class=\"clearfix\">\n\t  \t\t\t\t\t\t\t<hr>\n\n\t  \t\t\t\t\t\t\t<div class=\"form-group\">\n\t  \t\t\t\t\t\t\t\t<label for=\"distributor\" class=\"control-label col-md-3\">Distributor</label>\n\t  \t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t  \t\t\t\t\t\t\t\t\t<select class=\"form-control\" id=\"distributor\">\n\t  \t\t\t\t\t\t\t\t\t</select>\n\t  \t\t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t\t\t<div class=\"col-md-2\">\n\t  \t\t\t\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-default\" id=\"btn-new-distributor\">New</button>\n\t  \t\t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t<div class=\"row-fluid\">\n\t  \t\t\t\t\t\t\t<div class=\"form-group\">\n\t  \t\t\t\t\t\t\t\t<label for=\"order-number\" class=\"control-label col-md-3\">Order Number</label>\n\t  \t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t  \t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" id=\"order-number\" placeholder=\"\">\n\t  \t\t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t\t\t<label for=\"sku\" class=\"control-label col-md-1 \">SKU</label>\n\t  \t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t  \t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" id=\"sku\" placeholder=\"\">\n\t  \t\t\t\t\t\t\t\t</div>\n\n\t  \t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t<div class=\"row-fluid\">\n\t  \t\t\t\t\t\t\t<div class=\"form-group\">\n\t  \t\t\t\t\t\t\t\t<label for=\"packaging-unit\" class=\"control-label col-md-3\">Packaging Unit</label>\n\t  \t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t  \t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" id=\"packaging-unit\" placeholder=\"\">\n\t  \t\t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t\t\t<label for=\"price-per-item\" class=\"control-label col-md-1\">Price</label>\n\t  \t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t  \t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" id=\"price-per-item\" placeholder=\"Price per unit\">\n\t  \t\t\t\t\t\t\t\t</div>\n\n\t  \t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t<div class=\"row-fluid\">\n\t  \t\t\t\t\t\t\t<div class=\"form-group\">\n\t  \t\t\t\t\t\t\t\t<label for=\"package-price\" class=\"control-label col-md-3\">Package Price</label>\n\t  \t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t  \t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" id=\"package-price\" placeholder=\"\">\n\t  \t\t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t\t\t<div class=\"input-group\">\n\t  \t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t  \t\t\t\t\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-default\" id=\"btn-add-distributor-part\">Add</button>\n\t  \t\t\t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t\t\t\t<div class=\"col-md-1\">\n\t  \t\t\t\t\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-default pull-left\" id=\"btn-delete-distributor-part\">Delete</button>\n\t  \t\t\t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t<div class=\"row-fluid\">\n\t  \t\t\t\t\t\t\t<div>\n\t  \t\t\t\t\t\t\t\t<table id=\"table-distributor-parts\" class=\"table table-striped\">\n\t  \t\t\t\t\t\t\t\t\t<thead>\n\t  \t\t\t\t\t\t\t\t\t\t<tr>\n\t  \t\t\t\t\t\t\t\t\t\t\t<th>Distributor</th>\n\t  \t\t\t\t\t\t\t\t\t\t\t<th>Order No</th>\n\t  \t\t\t\t\t\t\t\t\t\t\t<th>Packaging Unit</th>\n\t  \t\t\t\t\t\t\t\t\t\t\t<th>Package Price</th>\n\t  \t\t\t\t\t\t\t\t\t\t\t<th>Price/Unit</th>\n\t  \t\t\t\t\t\t\t\t\t\t\t<th>SKU</th>\n\t  \t\t\t\t\t\t\t\t\t\t</tr>\n\t  \t\t\t\t\t\t\t\t\t</thead>\n\t  \t\t\t\t\t\t\t\t\t<tbody>\n\t  \t\t\t\t\t\t\t\t\t</tbody>\n\t  \t\t\t\t\t\t\t\t</table>\n\t  \t\t\t\t\t\t\t</div>\n\n\t  \t\t\t\t\t\t</div>\n\t  \t\t\t\t\t</div>\n\n\t  \t\t\t\t\t\t<!--\n\t  \t\t\t\t\t\t<div class=\"form-group\">\n\t  \t\t\t\t\t\t\t\n\t  \t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t\n\t  \t\t\t\t\t\t<div class=\"form-group\">\n\t  \t\t\t\t\t\t\t<label for=\"price-per-item\" class=\"control-label col-md-3\">Price Per Item</label>\n\t  \t\t\t\t\t\t\t<div class=\"col-md-5\">\n\t  \t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" id=\"price-per-item\" placeholder=\"\">\n\t  \t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t</div> -->\n\t  \t\t\t\t\t</div>\n\t  \t\t\t\t\t<div id=\"sectionD\" class=\"tab-pane fade form-horizontal\" >\n\t  \t\t\t\t\t\t<div class=\"row-fluid\">\n\t  \t\t\t\t\t\t\t<div class=\"clearfix\">\n\t  \t\t\t\t\t\t\t\t<hr>\n\n\t  \t\t\t\t\t\t\t\t<div class=\"form-group\">\n\t  \t\t\t\t\t\t\t\t\t<label for=\"manufacturer\" class=\"control-label col-md-3\">Manufacturer</label>\n\t  \t\t\t\t\t\t\t\t\t<div class=\"col-md-5\">\n\t  \t\t\t\t\t\t\t\t\t\t<select class=\"form-control\" id=\"manufacturer\">\n\t  \t\t\t\t\t\t\t\t\t\t</select>\n\t  \t\t\t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t\t\t\t<div class=\"col-md-2\">\n\t  \t\t\t\t\t\t\t\t\t\t<button type=\"button\" id=\"btn-new-manufacturer\" class=\"btn btn-default\">New</button>\n\t  \t\t\t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t<div class=\"row-fluid\">\n\t  \t\t\t\t\t\t\t<div class=\"form-group\">\n\t  \t\t\t\t\t\t\t\t<label for=\"part-number\" class=\"control-label col-md-3\">Part Number</label>\n\t  \t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t  \t\t\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" id=\"part-number\" placeholder=\"\">\n\t  \t\t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t\t\t<div class=\"input-group\">\n\t  \t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t  \t\t\t\t\t\t\t\t\t\t<button type=\"button\" id=\"btn-add-manufacturer-part\" class=\"btn btn-default\">Add</button>\n\t  \t\t\t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t\t\t\t<div class=\"col-md-1\">\n\t  \t\t\t\t\t\t\t\t\t\t<button type=\"button\" id=\"btn-delete-manufacturer-part\" class=\"btn btn-default pull-left\">Delete</button>\n\t  \t\t\t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t<div class=\"row-fluid\">\n\t  \t\t\t\t\t\t\t<div>\n\t  \t\t\t\t\t\t\t\t<table id=\"table-manufacturer-parts\" class=\"table table-striped\">\n\t  \t\t\t\t\t\t\t\t\t<thead>\n\t  \t\t\t\t\t\t\t\t\t\t<tr>\n\t  \t\t\t\t\t\t\t\t\t\t\t<th>Manufacturer</th>\n\t  \t\t\t\t\t\t\t\t\t\t\t<th>Part Number</th>\n\t  \t\t\t\t\t\t\t\t\t\t</tr>\n\t  \t\t\t\t\t\t\t\t\t</thead>\n\t  \t\t\t\t\t\t\t\t\t<tbody>\n\t  \t\t\t\t\t\t\t\t\t</tbody>\n\t  \t\t\t\t\t\t\t\t</table>\n\t  \t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t</div>\n\t  \t\t\t\t\t</div>\n\t  \t\t\t\t\t<div id=\"sectionE\" class=\"tab-pane fade form-horizontal\">\n\t  \t\t\t\t\t\t<div class=\"row-fluid\">\n\t  \t\t\t\t\t\t\t<div class=\"clearfix\">\n\t  \t\t\t\t\t\t\t\t<hr>\n\n\t  \t\t\t\t\t\t\t\t<div class=\"row-fluid\">\n\t  \t\t\t\t\t\t\t\t\t<div class=\"input-group\">\n\t  \t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t  \t\t\t\t\t\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-default\">Add</button>\n\t  \t\t\t\t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t\t\t\t\t<div class=\"col-md-1\">\n\t  \t\t\t\t\t\t\t\t\t\t\t<button type=\"button\" class=\"btn btn-default pull-left\">Delete</button>\n\t  \t\t\t\t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t\t\t<div class=\"row-fluid\">\n\t  \t\t\t\t\t\t\t\t\t<div>\n\t  \t\t\t\t\t\t\t\t\t\t<table id=\"table-attachments\" class=\"table table-striped\">\n\t  \t\t\t\t\t\t\t\t\t\t\t<thead>\n\t  \t\t\t\t\t\t\t\t\t\t\t\t<tr>\n\t  \t\t\t\t\t\t\t\t\t\t\t\t\t<th></th>\n\t  \t\t\t\t\t\t\t\t\t\t\t\t\t<th>Filename</th>\n\t  \t\t\t\t\t\t\t\t\t\t\t\t\t<th>Size</th>\n\t  \t\t\t\t\t\t\t\t\t\t\t\t\t<th>Description</th>\n\t  \t\t\t\t\t\t\t\t\t\t\t\t</tr>\n\t  \t\t\t\t\t\t\t\t\t\t\t</thead>\n\t  \t\t\t\t\t\t\t\t\t\t\t<tbody>\n\t  \t\t\t\t\t\t\t\t\t\t\t</tbody>\n\t  \t\t\t\t\t\t\t\t\t\t</table>\n\t  \t\t\t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t\t</div>\n\t  \t\t\t\t\t\t</div>\n\t  \t\t\t\t\t</div>\n\t  \t\t\t\t</div>\n\t  \t\t\t</div>\n\n\t  \t\t</form>\n\t  \t</div>\n\n\t  \t<!-- Fixed navbar -->\n\t  \t<nav class=\"navbar navbar-inverse navbar-fixed-top\">\n\t  \t\t<div class=\"container\">\n\t  \t\t\t<div class=\"navbar-header\">\n\t  \t\t\t\t<button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-expanded=\"false\" aria-controls=\"navbar\">\n\t  \t\t\t\t\t<span class=\"sr-only\">Toggle navigation</span>\n\t  \t\t\t\t\t<span class=\"icon-bar\"></span>\n\t  \t\t\t\t\t<span class=\"icon-bar\"></span>\n\t  \t\t\t\t\t<span class=\"icon-bar\"></span>\n\t  \t\t\t\t</button>\n\t  \t\t\t\t<a class=\"navbar-brand\" href=\"#\">GF</a>\n\t  \t\t\t</div>\n\t  \t\t\t<div id=\"navbar\" class=\"navbar-collapse collapse\">\n\t  \t\t\t\t<ul class=\"nav navbar-nav\">\n\t  \t\t\t\t\t<li class=\"active\"><a href=\"#\">Components</a></li>\n\t  \t\t\t\t\t<li><a href=\"#about\">Projects</a></li>\n\t  \t\t\t\t\t<li><a href=\"#contact\">Account</a></li>\n\t  \t\t\t\t\t<li class=\"dropdown\">\n\t  \t\t\t\t\t\t<a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">Dropdown <span class=\"caret\"></span></a>\n\t  \t\t\t\t\t\t<ul class=\"dropdown-menu\">\n\t  \t\t\t\t\t\t\t<li><a href=\"#\">Action</a></li>\n\t  \t\t\t\t\t\t\t<li><a href=\"#\">Another action</a></li>\n\t  \t\t\t\t\t\t\t<li><a href=\"#\">Something else here</a></li>\n\t  \t\t\t\t\t\t\t<li role=\"separator\" class=\"divider\"></li>\n\t  \t\t\t\t\t\t\t<li class=\"dropdown-header\">Nav header</li>\n\t  \t\t\t\t\t\t\t<li><a href=\"#\">Separated link</a></li>\n\t  \t\t\t\t\t\t\t<li><a href=\"#\">One more separated link</a></li>\n\t  \t\t\t\t\t\t</ul>\n\t  \t\t\t\t\t</li>\n\t  \t\t\t\t</ul>\n\t  \t\t\t</div><!--/.nav-collapse -->\n\t  \t\t</div>\n\t  \t</nav>\n\t  \t<div class=\"container-fluid\">\n\t  \t\t<div class=\"row\">\n\t  \t\t\t<div class=\"list-group\">\n\t  \t\t\t\t<div class=\"col-sm-3 col-md-2 sidebar\">\n\t  \t\t\t\t\t<a href=\"#about\"><button type=\"button\" class=\"list-group-item mybutton\">All<span class=\"badge\">0</span></button></a>\n\t  \t\t\t\t\t<button type=\"button\" class=\"list-group-item mybutton\">Cable<span class=\"badge\">0</span></button>\n\t  \t\t\t\t\t<button type=\"button\" class=\"list-group-item\">Capacitor<span class=\"badge\">0</span></button>\n\t  \t\t\t\t\t<button type=\"button\" class=\"list-group-item\">Connector<span class=\"badge\">0</span></button>\n\t  \t\t\t\t\t<button type=\"button\" class=\"list-group-item\">Diode<span class=\"badge\">0</span></button>\n\t  \t\t\t\t\t<button type=\"button\" class=\"list-group-item\">Display<span class=\"badge\">0</span></button>\n\t  \t\t\t\t\t<button type=\"button\" class=\"list-group-item\">IC<span class=\"badge\">0</span></button>\n\t  \t\t\t\t\t<button type=\"button\" class=\"list-group-item\">Inductor<span class=\"badge\">0</span></button>\n\t  \t\t\t\t\t<button type=\"button\" class=\"list-group-item\">Mechanic<span class=\"badge\">0</span></button>\n\t  \t\t\t\t\t<button type=\"button\" class=\"list-group-item\">Misc<span class=\"badge\">0</span></button>\n\t  \t\t\t\t\t<button type=\"button\" class=\"list-group-item\">Module<span class=\"badge\">0</span></button>\n\t  \t\t\t\t\t<button type=\"button\" class=\"list-group-item\">Opto<span class=\"badge\">0</span></button>\n\t  \t\t\t\t\t<button type=\"button\" class=\"list-group-item\">Oscillator<span class=\"badge\">0</span></button>\n\t  \t\t\t\t\t<button type=\"button\" class=\"list-group-item\">Resistor<span class=\"badge\">0</span></button>\n\t  \t\t\t\t\t<button type=\"button\" class=\"list-group-item\">Sensor<span class=\"badge\">0</span></button>\n\t  \t\t\t\t\t<button type=\"button\" class=\"list-group-item\">Switch<span class=\"badge\">0</span></button>\n\t  \t\t\t\t\t<button type=\"button\" class=\"list-group-item\">Transformer<span class=\"badge\">0</span></button>\n\t  \t\t\t\t\t<button type=\"button\" class=\"list-group-item\">Transistor<span class=\"badge\">0</span></button>\n\t  \t\t\t\t</div>\n\t  \t\t\t</div>\n\t  \t\t\t<div>\n\t  \t\t\t\t<button type=\"button\" class=\"btn default-btn\" id=\"add-component\">Add Component</button>\n\t  \t\t\t\t<button type=\"button\" class=\"btn default-btn\" id=\"del-component\">Delete Component</button>\n\t  \t\t\t\t<div class=\"table-responsive\">\n\t  \t\t\t\t\t<table class=\"table\">\n\t  \t\t\t\t\t\t<thead>\n\t  \t\t\t\t\t\t\t<tr>\n\t  \t\t\t\t\t\t\t\t<th>Name</th>\n\t  \t\t\t\t\t\t\t\t<th>Category</th>\n\t  \t\t\t\t\t\t\t\t<th>Location</th>\n\t  \t\t\t\t\t\t\t\t<th>Datasheet</th>\n\t  \t\t\t\t\t\t\t\t<th>Quantity</th>\n\t  \t\t\t\t\t\t\t\t<th>Description</th>\n\t  \t\t\t\t\t\t\t</tr>\n\t  \t\t\t\t\t\t</thead>\n\t  \t\t\t\t\t</table>\n\t  \t\t\t\t</div>\n\t  \t\t\t</div>\n\t  \t\t</div>\n\n\n\t  \t\t<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n\t  \t\t<script language=\"JavaScript\" type=\"text/javascript\" src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js\"></script>\n\t  \t\t<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js\"></script>\n\t  \t\t<link rel=\"stylesheet\" href=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css\">\n\t  \t\t<script language=\"JavaScript\" type=\"text/javascript\" src=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js\"></script>\n\t  \t\t<script language=\"JavaScript\" type=\"text/javascript\" src=\"script.js\"></script>\n\t  \t\t<!-- Include all compiled plugins (below), or include individual files as needed -->\n\t  \t</body>\n\t  \t</html>",
+			"file": "index.html",
+			"file_size": 18876,
+			"file_write_time": 131231629514650950,
+			"settings":
+			{
+				"buffer_size": 18908,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "style.css",
+			"settings":
+			{
+				"buffer_size": 607,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 7 files for \"Add Component\"\n\n/home/slaurin/projects/ecinvweb/index.html:\n   23  \t  <body>\n   24  \n   25: \t  \t<div class=\"container-fluid\"id=\"dialog-form\" title=\"Add Component\">\n   26  \t  \t\t<form>\n   27  \t  \t\t\t<div class=\"bs-example\" >\n   ..\n  380  \t  \t\t\t</div>\n  381  \t  \t\t\t<div>\n  382: \t  \t\t\t\t<button type=\"button\" class=\"btn default-btn\" id=\"add-component\">Add Component</button>\n  383  \t  \t\t\t\t<button type=\"button\" class=\"btn default-btn\" id=\"del-component\">Delete Component</button>\n  384  \t  \t\t\t\t<div class=\"table-responsive\">\n\n/home/slaurin/projects/ecinvweb/script.js:\n    8  \t$('#dialog-form').dialog({\n    9  \t\tautoOpen: false,\n   10: \t\ttitle: 'Add component'\n   11  \t});\n   12  \t$('#opener').click(function() {\n   ..\n   87        modal: true,\n   88        buttons: {\n   89:         \"Add component\": addComponent,\n   90          Cancel: function() {\n   91            dialog.dialog( \"close\" );\n\n4 matches across 2 files\n",
+			"settings":
+			{
+				"buffer_size": 938,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 192.0,
+		"last_filter": "Install",
+		"selected_items":
+		[
+			[
+				"Install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package I",
+				"Package Control: Install Package"
+			],
+			[
+				"git:",
+				"Git: Pull"
+			],
+			[
+				"git",
+				"Git: Init"
+			],
+			[
+				"Package Control: Install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"File: Save All"
+			]
+		],
+		"width": 485.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/slaurin/projects/ecinvweb"
+	],
+	"file_history":
+	[
+		"/home/slaurin/sandbox/express_test/server_express.js",
+		"/home/slaurin/sandbox/test/nodejs/serveur.js",
+		"/home/slaurin/sandbox/test/test.js",
+		"/home/slaurin/sandbox/test/test.html",
+		"/home/slaurin/sandbox/test/nodejs/test.js",
+		"/home/slaurin/survivalguide/survivalguide/forms.py",
+		"/home/slaurin/survivalguide/survivalguide/settings.py",
+		"/home/slaurin/survivalguide/templates/accounts/signup.html",
+		"/home/slaurin/survivalguide/templates/login.html",
+		"/home/slaurin/survivalguide/survivalguide/urls.py",
+		"/home/slaurin/survivalguide/templates/home.html",
+		"/home/slaurin/survivalguide/survivalguide/views.py",
+		"/home/slaurin/survivalguide/templates/_layouts/base.html",
+		"/home/slaurin/survivalguide/.gitignore",
+		"/home/slaurin/work/gswd/projects/microblog/microblog/settings/__init__.py",
+		"/home/slaurin/work/gswd/projects/microblog/microblog/settings/local.py",
+		"/home/slaurin/work/gswd/projects/microblog/microblog/settings/base.py",
+		"/home/slaurin/work/gswd/projects/microblog/.gitignore",
+		"/home/slaurin/projects/ecinvweb/server.py",
+		"/home/slaurin/work/web/conFusion/index.html",
+		"/home/slaurin/work/fullstack/vagrant/work/FullStackFoundation/set1/puppypopulator.py",
+		"/home/slaurin/work/fullstack/vagrant/work/FullStackFoundation/set1/puppies.py",
+		"/home/slaurin/work/python/emaildb.py",
+		"/home/slaurin/work/fullstack/vagrant/work/Lesson_3_05/models.py",
+		"/home/slaurin/work/fullstack/vagrant/work/Lesson_3_05/endpoints_tester3.py",
+		"/home/slaurin/work/fullstack/vagrant/work/Lesson_3_05/endpointsproject3.py",
+		"/home/slaurin/work/fullstack/vagrant/work/Lesson_3_03/endpoints.py",
+		"/home/slaurin/work/fullstack/vagrant/work/Lesson_3_04/endpoints_tester2.py",
+		"/home/slaurin/work/fullstack/vagrant/work/Lesson_3_04/endpoints2.py",
+		"/home/slaurin/work/fullstack/vagrant/work/Lesson_3_03/endpoints_tester.py",
+		"/home/slaurin/work/fullstack/vagrant/work/Lesson_2_12/findARestaurant.py",
+		"/home/slaurin/work/fullstack/vagrant/work/Lesson_2_12/geocode.py",
+		"/home/slaurin/.config/sublime-text-3/Packages/User/tidy_xml.py",
+		"/home/slaurin/.config/sublime-text-3/Packages/User/prettify_json.py",
+		"/home/slaurin/.config/sublime-text-3/Packages/Package Control/Package Control.sublime-settings",
+		"/home/slaurin/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/slaurin/GoogleDrive/Projets/Halloween_2015/synchronized_lights_serial_led_strip.py",
+		"/home/slaurin/GoogleDrive/Projets/Halloween_2015/play.py",
+		"/home/slaurin/GoogleDrive/Projets/Halloween_2015/F8JJ4J8HQCWG0FE.py",
+		"/home/slaurin/git/lightshowpi/py/synchronized_lights.py",
+		"/home/slaurin/git/lightshowpi/config/defaults.cfg",
+		"/home/slaurin/git/lightshowpi/py/hardware_controller.py",
+		"/home/slaurin/GoogleDrive/Projets/Halloween_2015/synchronized_lights.py",
+		"/home/slaurin/GoogleDrive/WebDensite/index.html",
+		"/home/slaurin/GoogleDrive/WebZachary/index.html",
+		"/home/slaurin/project/flask/hello.py",
+		"/home/slaurin/project/flask/coucoy.py",
+		"/home/slaurin/GoogleDrive/WebZachary/jquery.dragtable.js",
+		"/home/slaurin/GoogleDrive/WebZachary/script.js",
+		"/home/slaurin/GoogleDrive/WebZachary/styles.css",
+		"/home/slaurin/beagle/poky-build/conf/local.conf",
+		"/home/slaurin/beagle/poky/meta-openembedded/layer.conf",
+		"/home/slaurin/beagle/poky/openembedded-core/conf/layer.conf",
+		"/home/slaurin/GoogleDrive/WebDensite/css/main.css",
+		"/home/slaurin/nodejs/learnyounode/fileserver.js",
+		"/home/slaurin/nodejs/learnyounode/timeserver.js",
+		"/home/slaurin/nodejs/learnyounode/http_get.js",
+		"/home/slaurin/nodejs/learnyounode/mymodule.js",
+		"/home/slaurin/nodejs/learnyounode/program.js",
+		"/home/slaurin/beagle/poky-build/conf/bblayers.conf",
+		"/home/slaurin/projects/ecinvweb/style.css",
+		"/home/slaurin/projects/ecinvweb/script.js",
+		"/home/slaurin/projects/ecinvweb/dialog.html",
+		"/home/slaurin/projects/ecinvweb/dialog2.html",
+		"/home/slaurin/projects/ecinvweb/index.html",
+		"/home/slaurin/GoogleDrive/WebDensite/css/normalize.css",
+		"/home/slaurin/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/slaurin/GoogleDrive/monsiteweb/index.html",
+		"/home/slaurin/projects/zachary/styles.css",
+		"/home/slaurin/projects/zachary/script.js",
+		"/home/slaurin/projects/zachary/index.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"category",
+			"addComponent",
+			"addDistributor",
+			"',\n",
+			"dialog-form",
+			"manufac",
+			"distributor",
+			"dialog-form",
+			"Add Component",
+			"add component",
+			"Add Component",
+			"id",
+			"0x06",
+			"cache",
+			"gVal",
+			"led",
+			"is_pin_pwm",
+			"limit",
+			"THRES",
+			"hc",
+			"turn_on_light",
+			" hc.turn_on_ligh",
+			"led_array",
+			"hc",
+			"limit",
+			"limit[i]",
+			"display_column",
+			"update_lights",
+			"display_column",
+			"led",
+			"display_column",
+			"matrix",
+			"calculate_levels",
+			"frequency_limits",
+			"calculate_channel_frequency",
+			"update_lights",
+			"calculate_channel_frequency",
+			"GPIOLEN",
+			">Élève",
+			"dragaccept",
+			"console",
+			"prio",
+			"//$('#",
+			"THREAD",
+			"Add Component",
+			"New",
+			"col-md-1",
+			"horizontal",
+			"-xs-",
+			"attr",
+			"button ",
+			"À faire",
+			"class=\"a-faire tache\"",
+			"header",
+			"green",
+			"red",
+			"green",
+			"friday",
+			"monday",
+			"create-user",
+			"tache-name",
+			"Faire",
+			"fon",
+			"A Faire",
+			"tâches",
+			"<td>Élève",
+			"class=\"red\"",
+			"Zachary Henauld",
+			"addUser",
+			"create-user"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			" onclick=\"document.execCommand('selectAll',false,null)\">Élève",
+			"onclick=\"document.execCommand('selectAll',false,null)\">Élève",
+			"-md-",
+			"button class=\"tache\"",
+			"",
+			"a-faire",
+			"fait",
+			"vendredi",
+			"lundi",
+			"À faire",
+			"<td contentEditable=\"true\">Élève",
+			"class=\"red tache\"",
+			"Élève "
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "ecinvweb.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 45,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "script.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12495,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4442,
+								4442
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1857.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 613,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								559,
+								559
+							]
+						],
+						"settings":
+						{
+							"auto_complete": true,
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "server.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5630,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2056,
+								2056
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 234.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "multimap.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 500,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18908,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4263,
+								4263
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1277.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 607,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								295,
+								295
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 938,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										171,
+										184
+									],
+									[
+										369,
+										382
+									],
+									[
+										664,
+										677
+									],
+									[
+										803,
+										816
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								827,
+								827
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"default_dir": "/home/slaurin/projects/ecinvweb",
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "",
+	"project": "ecinvweb.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 50.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

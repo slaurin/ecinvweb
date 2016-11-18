@@ -21,6 +21,15 @@ body {
 input[type="number"] {
    width:50px;
 }
+
+.row-selected {
+	background-color: #66bbFF;
+}
+
+tr:hover td {
+    background: #c7d4dd !important;
+}
+
 /*
 .list-group-item {
 	color: white;

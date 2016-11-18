@@ -1,0 +1,469 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"li",
+				"link\tTag"
+			],
+			[
+				"email",
+				"email_pieces"
+			],
+			[
+				"update",
+				"updatePuppy"
+			],
+			[
+				"get",
+				"getAllPuppies"
+			],
+			[
+				"venu",
+				"venue_id"
+			],
+			[
+				"ven",
+				"venue_id"
+			],
+			[
+				"re",
+				"result"
+			],
+			[
+				"g",
+				"getGeocodeLocation"
+			],
+			[
+				"volume",
+				"adjustVolume"
+			],
+			[
+				"s",
+				"serial"
+			],
+			[
+				"c",
+				"corrige"
+			],
+			[
+				"a",
+				"a-faire"
+			],
+			[
+				"respon",
+				"responses"
+			],
+			[
+				"pro",
+				"process"
+			],
+			[
+				"paddin",
+				"padding-right"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"wi",
+				"min-width"
+			],
+			[
+				"button",
+				"button"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"i",
+				"i"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"m",
+				"margin"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"border",
+				"border-style"
+			],
+			[
+				"bor",
+				"border-width"
+			],
+			[
+				"bo",
+				"border-color"
+			],
+			[
+				"backgrou",
+				"background-color"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"text",
+				"textarea\tTag"
+			],
+			[
+				"b",
+				"background-color"
+			],
+			[
+				"ba",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 192.0,
+		"last_filter": "Install",
+		"selected_items":
+		[
+			[
+				"Install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package I",
+				"Package Control: Install Package"
+			],
+			[
+				"git:",
+				"Git: Pull"
+			],
+			[
+				"git",
+				"Git: Init"
+			],
+			[
+				"Package Control: Install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"File: Save All"
+			]
+		],
+		"width": 485.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/slaurin/sandbox/express_test/server_express.js",
+		"/home/slaurin/sandbox/test/nodejs/serveur.js",
+		"/home/slaurin/sandbox/test/test.js",
+		"/home/slaurin/sandbox/test/test.html",
+		"/home/slaurin/sandbox/test/nodejs/test.js",
+		"/home/slaurin/survivalguide/survivalguide/forms.py",
+		"/home/slaurin/survivalguide/survivalguide/settings.py",
+		"/home/slaurin/survivalguide/templates/accounts/signup.html",
+		"/home/slaurin/survivalguide/templates/login.html",
+		"/home/slaurin/survivalguide/survivalguide/urls.py",
+		"/home/slaurin/survivalguide/templates/home.html",
+		"/home/slaurin/survivalguide/survivalguide/views.py",
+		"/home/slaurin/survivalguide/templates/_layouts/base.html",
+		"/home/slaurin/survivalguide/.gitignore",
+		"/home/slaurin/work/gswd/projects/microblog/microblog/settings/__init__.py",
+		"/home/slaurin/work/gswd/projects/microblog/microblog/settings/local.py",
+		"/home/slaurin/work/gswd/projects/microblog/microblog/settings/base.py",
+		"/home/slaurin/work/gswd/projects/microblog/.gitignore",
+		"/home/slaurin/projects/ecinvweb/server.py",
+		"/home/slaurin/work/web/conFusion/index.html",
+		"/home/slaurin/work/fullstack/vagrant/work/FullStackFoundation/set1/puppypopulator.py",
+		"/home/slaurin/work/fullstack/vagrant/work/FullStackFoundation/set1/puppies.py",
+		"/home/slaurin/work/python/emaildb.py",
+		"/home/slaurin/work/fullstack/vagrant/work/Lesson_3_05/models.py",
+		"/home/slaurin/work/fullstack/vagrant/work/Lesson_3_05/endpoints_tester3.py",
+		"/home/slaurin/work/fullstack/vagrant/work/Lesson_3_05/endpointsproject3.py",
+		"/home/slaurin/work/fullstack/vagrant/work/Lesson_3_03/endpoints.py",
+		"/home/slaurin/work/fullstack/vagrant/work/Lesson_3_04/endpoints_tester2.py",
+		"/home/slaurin/work/fullstack/vagrant/work/Lesson_3_04/endpoints2.py",
+		"/home/slaurin/work/fullstack/vagrant/work/Lesson_3_03/endpoints_tester.py",
+		"/home/slaurin/work/fullstack/vagrant/work/Lesson_2_12/findARestaurant.py",
+		"/home/slaurin/work/fullstack/vagrant/work/Lesson_2_12/geocode.py",
+		"/home/slaurin/.config/sublime-text-3/Packages/User/tidy_xml.py",
+		"/home/slaurin/.config/sublime-text-3/Packages/User/prettify_json.py",
+		"/home/slaurin/.config/sublime-text-3/Packages/Package Control/Package Control.sublime-settings",
+		"/home/slaurin/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/slaurin/GoogleDrive/Projets/Halloween_2015/synchronized_lights_serial_led_strip.py",
+		"/home/slaurin/GoogleDrive/Projets/Halloween_2015/play.py",
+		"/home/slaurin/GoogleDrive/Projets/Halloween_2015/F8JJ4J8HQCWG0FE.py",
+		"/home/slaurin/git/lightshowpi/py/synchronized_lights.py",
+		"/home/slaurin/git/lightshowpi/config/defaults.cfg",
+		"/home/slaurin/git/lightshowpi/py/hardware_controller.py",
+		"/home/slaurin/GoogleDrive/Projets/Halloween_2015/synchronized_lights.py",
+		"/home/slaurin/GoogleDrive/WebDensite/index.html",
+		"/home/slaurin/GoogleDrive/WebZachary/index.html",
+		"/home/slaurin/project/flask/hello.py",
+		"/home/slaurin/project/flask/coucoy.py",
+		"/home/slaurin/GoogleDrive/WebZachary/jquery.dragtable.js",
+		"/home/slaurin/GoogleDrive/WebZachary/script.js",
+		"/home/slaurin/GoogleDrive/WebZachary/styles.css",
+		"/home/slaurin/beagle/poky-build/conf/local.conf",
+		"/home/slaurin/beagle/poky/meta-openembedded/layer.conf",
+		"/home/slaurin/beagle/poky/openembedded-core/conf/layer.conf",
+		"/home/slaurin/GoogleDrive/WebDensite/css/main.css",
+		"/home/slaurin/nodejs/learnyounode/fileserver.js",
+		"/home/slaurin/nodejs/learnyounode/timeserver.js",
+		"/home/slaurin/nodejs/learnyounode/http_get.js",
+		"/home/slaurin/nodejs/learnyounode/mymodule.js",
+		"/home/slaurin/nodejs/learnyounode/program.js",
+		"/home/slaurin/beagle/poky-build/conf/bblayers.conf",
+		"/home/slaurin/projects/ecinvweb/style.css",
+		"/home/slaurin/projects/ecinvweb/script.js",
+		"/home/slaurin/projects/ecinvweb/dialog.html",
+		"/home/slaurin/projects/ecinvweb/dialog2.html",
+		"/home/slaurin/projects/ecinvweb/index.html",
+		"/home/slaurin/GoogleDrive/WebDensite/css/normalize.css",
+		"/home/slaurin/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/slaurin/GoogleDrive/monsiteweb/index.html",
+		"/home/slaurin/projects/zachary/styles.css",
+		"/home/slaurin/projects/zachary/script.js",
+		"/home/slaurin/projects/zachary/index.html"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"id",
+			"0x06",
+			"cache",
+			"gVal",
+			"led",
+			"is_pin_pwm",
+			"limit",
+			"THRES",
+			"hc",
+			"turn_on_light",
+			" hc.turn_on_ligh",
+			"led_array",
+			"hc",
+			"limit",
+			"limit[i]",
+			"display_column",
+			"update_lights",
+			"display_column",
+			"led",
+			"display_column",
+			"matrix",
+			"calculate_levels",
+			"frequency_limits",
+			"calculate_channel_frequency",
+			"update_lights",
+			"calculate_channel_frequency",
+			"GPIOLEN",
+			">Élève",
+			"dragaccept",
+			"console",
+			"prio",
+			"//$('#",
+			"THREAD",
+			"Add Component",
+			"New",
+			"col-md-1",
+			"horizontal",
+			"-xs-",
+			"attr",
+			"button ",
+			"À faire",
+			"class=\"a-faire tache\"",
+			"header",
+			"green",
+			"red",
+			"green",
+			"friday",
+			"monday",
+			"create-user",
+			"tache-name",
+			"Faire",
+			"fon",
+			"A Faire",
+			"tâches",
+			"<td>Élève",
+			"class=\"red\"",
+			"Zachary Henauld",
+			"addUser",
+			"create-user"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			" onclick=\"document.execCommand('selectAll',false,null)\">Élève",
+			"onclick=\"document.execCommand('selectAll',false,null)\">Élève",
+			"-md-",
+			"button class=\"tache\"",
+			"",
+			"a-faire",
+			"fait",
+			"vendredi",
+			"lundi",
+			"À faire",
+			"<td contentEditable=\"true\">Élève",
+			"class=\"red tache\"",
+			"Élève "
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "server.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 301.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
